@@ -1,13 +1,14 @@
+import styles from "./Button.module.css";
+
 interface Props {
   children: string;
   color?: "Primary" | "Secondary" | "danger";
-  onClick: () => void;
 }
 
-const Button = ({ children, color, onClick }: Props) => {
+const Button = ({ children, color }: Props) => {
   return (
     <>
-      <button className={"btn btn-" + color} onClick={onClick}>
+      <button className={[styles.btn, styles["btn-" + color]].join(" ")}>
         {children}
       </button>
     </>
