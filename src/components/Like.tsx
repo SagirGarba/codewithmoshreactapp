@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { FcLikePlaceholder } from "react-icons/fc";
+import { AiTwotoneHeart, AiOutlineHeart } from "react-icons/ai";
 
 interface Props {
-  handleClick: () => void;
+  color: boolean;
+  toggle: () => void;
 }
-const Like = ({ handleClick }: Props) => {
-  const [color, setColor] = useState(false);
-
+const Like = ({ toggle, color }: Props) => {
   return (
     <>
       {color ? (
-        <FcLikePlaceholder color="ff6b81" size="100" onClick={handleClick} />
+        <AiTwotoneHeart color="ff6b81" size="100" onClick={toggle} />
       ) : (
-        <button onClick={handleClick} />
+        <>
+          <AiOutlineHeart color="green" size="100" onClick={toggle} />
+        </>
       )}
     </>
   );
