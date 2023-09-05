@@ -1,15 +1,18 @@
 // import ListGroup from "./components/ListGroup";
 import "./App.css";
+import PureComponent from "./components/PureComponent";
 // import Calendar from "./components/Calendar";
 
 // import Button from "./components/Button";
-import Like from "./components/Like";
-import { useState } from "react";
+// import Like from "./components/Like";
+// import { useState } from "react";
 
 // import AlertExercise from "./components/AlertExercise";
 // import { Children, useState } from "react";
 
 // import Alert from "./components/Alert";
+// import NextClass from "./components/NextClass";
+// import StateStructure from "./components/StateStructure";
 
 const App = () => {
   //   let items = ["San Francisco", "London", "Lagos", "Mumbai", "Kano"];
@@ -18,26 +21,26 @@ const App = () => {
   //     console.log(item);
   //   };
 
-  //  const [visibility, showVisibility] = useState(false);
+  // const [visibility, showVisibility] = useState(true);
 
   // const handleClick = () => showVisibility(true);
 
   // const closeClick = () => showVisibility(false);
 
-  const [color, setColor] = useState(true);
+  // const [color, setColor] = useState(true);
 
-  const onClick = () => {
-    console.log("Clicked");
-    setColor(!color);
-  };
+  // const onClick = () => {
+  //   console.log("Clicked");
+  //   setColor(!color);
+  // };
   return (
     <>
       {/* {visibility && (
-        <AlertExercise onClose={closeClick}>My button</AlertExercise>
-      )} 
+        <AlertExercise onClose={closeClick} onOpen={handleClick}>My button</AlertExercise>
+      )} */}
 
-      <Button children={"My button"} color={"Primary"} /> */}
-      <Like color={color} toggle={onClick} />
+      {/* <Button children={"My button"} color={"Primary"} /> 
+      <Like color={color} toggle={onClick} /> */}
 
       {/* <Alert>
     Hello <span>World</span>
@@ -54,6 +57,13 @@ const App = () => {
       />
 
       <Calendar /> */}
+
+      {/* <NextClass /> */}
+
+      {/* <StateStructure /> */}
+      <PureComponent />
+      <PureComponent />
+      <PureComponent />
     </>
   );
 };
