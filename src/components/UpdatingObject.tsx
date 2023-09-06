@@ -7,15 +7,13 @@ const UpdatingObject = () => {
   });
 
   const handleClick = () => {
-    drinks.price = 6;
-    setDrinks(drinks);
+    setDrinks({ ...drinks, price: 6 });
   };
 
-  return;
-  {
-    drinks.price;
-  }
-  <button onClick={handleClick}>Click</button>;
+  return (
+    <>
+      {drinks.price};<button onClick={handleClick}>Click</button>;
+    </>
+  );
 };
-
 export default UpdatingObject;

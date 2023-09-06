@@ -1,7 +1,10 @@
 // import ListGroup from "./components/ListGroup";
 import "./App.css";
-import PureComponent from "./components/PureComponent";
+import UpdatingArray from "./UpdatingArray";
+// import NestedObjects from "./components/NestedObjects";
+// import PureComponent from "./components/PureComponent";
 // import Calendar from "./components/Calendar";
+// import UpdatingObject from "./components/UpdatingObject";
 
 // import Button from "./components/Button";
 // import Like from "./components/Like";
@@ -61,9 +64,9 @@ const App = () => {
       {/* <NextClass /> */}
 
       {/* <StateStructure /> */}
-      <PureComponent />
-      <PureComponent />
-      <PureComponent />
+      {/* <UpdatingObject /> */}
+      {/* <NestedObjects /> */}
+      <UpdatingArray />
     </>
   );
 };
