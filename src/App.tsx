@@ -1,10 +1,14 @@
 // import ListGroup from "./components/ListGroup";
 import "./App.css";
-import UpdatingArray from "./UpdatingArray";
+import ExpandApp from "./components/ExpandableText";
+// import ShoppingCart from "./components/ShoppingCart";
+// import UpdatingArray from "./UpdatingArray";
+// import ArayObjct from "./components/ArayObjct";
 // import NestedObjects from "./components/NestedObjects";
 // import PureComponent from "./components/PureComponent";
 // import Calendar from "./components/Calendar";
 // import UpdatingObject from "./components/UpdatingObject";
+// import UpdatingState from "./components/UpdatingState";
 
 // import Button from "./components/Button";
 // import Like from "./components/Like";
@@ -66,7 +70,14 @@ const App = () => {
       {/* <StateStructure /> */}
       {/* <UpdatingObject /> */}
       {/* <NestedObjects /> */}
-      <UpdatingArray />
+      {/* <UpdatingArray /> */}
+
+      {/* <ArayObjct /> */}
+
+      {/* <ShoppingCart /> */}
+
+      {/* <UpdatingState /> */}
+      <ExpandApp />
     </>
   );
 };
